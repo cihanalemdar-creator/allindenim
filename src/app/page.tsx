@@ -356,6 +356,11 @@ export default function Home() {
                 title="Focused follow-up for sourcing teams that need control."
                 description="Allin Denim supports production with supplier coordination, quality checkpoints, measurement control, packaging review, and export documentation coordination."
               />
+              <p className="mt-5 text-sm leading-7 text-stone-700">
+                Product testing, inspection, labeling, and compliance documentation can be
+                coordinated according to the buyer&apos;s destination market and technical
+                requirements.
+              </p>
             </div>
             <div className="grid gap-4 lg:col-span-2">
               {qualityItems.map((item) => (

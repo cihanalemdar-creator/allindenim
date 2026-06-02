@@ -1,6 +1,7 @@
 import { CheckCircle2 } from "lucide-react";
 import { AssetIcon } from "@/components/AssetIcon";
 import { CapabilityCard } from "@/components/cards";
+import { ComplianceCertificationSection } from "@/components/ComplianceCertificationSection";
 import { Container } from "@/components/Container";
 import { CTASection } from "@/components/CTASection";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
@@ -13,13 +14,16 @@ import { createMetadata } from "@/lib/site";
 export const metadata = createMetadata({
   title: "Quality Control for Apparel Production in Turkey",
   description:
-    "Allin Denim supports apparel quality control in Turkey through supplier evaluation, material checks, sample approval, measurement control, inline inspection, final inspection, packaging review, and documentation coordination.",
+    "Allin Denim supports apparel quality control and compliance documentation in Turkey through supplier evaluation, product testing coordination, inspection, packaging review, and documentation support.",
   path: "/quality-control-compliance",
   keywords: [
     "quality control apparel Turkey",
     "garment production Turkey",
     "apparel sourcing agent Turkey",
-    "clothing manufacturer Turkey"
+    "clothing manufacturer Turkey",
+    "certified garment production",
+    "OEKO-TEX apparel supplier",
+    "children's clothing manufacturer Turkey"
   ]
 });
 
@@ -96,7 +100,7 @@ export default function QualityControlCompliancePage() {
           <SectionHeader
             eyebrow="Quality checkpoints"
             title="Practical controls across sampling and production."
-            description="Quality support is adapted to the product category, buyer requirements, supplier setup, and approved samples. The focus is clear documentation, timely communication, and production visibility."
+            description="Quality support is adapted to the product category, buyer requirements, supplier setup, and approved samples. The focus is clear documentation, timely communication, and production visibility. Product testing, inspection, labeling, and compliance documentation can be coordinated according to the buyer's destination market and technical requirements."
           />
           <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {qualityBlocks.map((block) => (
@@ -134,7 +138,9 @@ export default function QualityControlCompliancePage() {
         </Container>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <ComplianceCertificationSection className="bg-white" />
+
+      <section className="bg-cotton py-20 sm:py-24">
         <Container>
           <div className="grid gap-5 md:grid-cols-3">
             <CapabilityCard

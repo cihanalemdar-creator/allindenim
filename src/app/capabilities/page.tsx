@@ -1,5 +1,6 @@
 import { AssetIcon } from "@/components/AssetIcon";
 import { CapabilityCard } from "@/components/cards";
+import { ComplianceCertificationSection } from "@/components/ComplianceCertificationSection";
 import { Container } from "@/components/Container";
 import { CTASection } from "@/components/CTASection";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
@@ -12,13 +13,17 @@ import { createMetadata } from "@/lib/site";
 export const metadata = createMetadata({
   title: "Apparel Manufacturing Capabilities in Turkey",
   description:
-    "Explore Allin Denim's apparel manufacturing capabilities in Turkey, including sourcing, sampling, private label production, production management, quality control, packaging, and export coordination.",
+    "Explore Allin Denim's apparel manufacturing capabilities in Turkey, including sourcing, sampling, private label production, quality control, compliance documentation, packaging, and export coordination.",
   path: "/capabilities",
   keywords: [
     "apparel manufacturer Turkey",
     "clothing production Turkey",
     "private label clothing manufacturer Turkey",
-    "apparel sourcing Turkey"
+    "apparel sourcing Turkey",
+    "certified garment production",
+    "OEKO-TEX apparel supplier",
+    "organic cotton clothing manufacturer",
+    "recycled textile production"
   ]
 });
 
@@ -98,7 +103,9 @@ export default function CapabilitiesPage() {
         </Container>
       </section>
 
-      <section className="bg-cotton py-20 sm:py-24">
+      <ComplianceCertificationSection />
+
+      <section className="bg-white py-20 sm:py-24">
         <Container>
           <div className="grid gap-12 lg:grid-cols-[1fr_0.95fr] lg:items-center">
             <SectionHeader
