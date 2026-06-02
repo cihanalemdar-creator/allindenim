@@ -1,0 +1,15 @@
+.git
+.next
+node_modules
+.tools
+.tmp
+.backups
+.vercel
+
+.next-dev.log
+.next-dev.err.log
+tsconfig.tsbuildinfo
+
+*.local
+.env
+.env.*
