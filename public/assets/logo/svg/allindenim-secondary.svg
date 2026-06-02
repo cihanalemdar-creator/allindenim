@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="145" viewBox="0 0 620 145" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">ALL'IN DENIM secondary logo</title>
+  <desc id="desc">Compact ALL'IN DENIM wordmark for website header use.</desc>
+  <style>
+    .word { font-family: "Montserrat", "Avenir Next", "Helvetica Neue", Arial, sans-serif; font-weight: 300; letter-spacing: 8px; }
+  </style>
+  <rect width="620" height="145" fill="transparent"/>
+  <text x="310" y="71" text-anchor="middle" class="word" font-size="46" fill="#071F3A">ALL'IN DENIM</text>
+  <line x1="122" y1="101" x2="286" y2="101" stroke="#B9783E" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="8 9"/>
+  <line x1="334" y1="101" x2="498" y2="101" stroke="#B9783E" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="8 9"/>
+  <circle cx="310" cy="101" r="8" fill="#B9783E"/>
+  <circle cx="310" cy="101" r="3" fill="#F7F4EE"/>
+</svg>

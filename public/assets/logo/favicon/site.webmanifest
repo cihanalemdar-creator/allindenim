@@ -1,0 +1,19 @@
+{
+  "name": "ALL'IN DENIM",
+  "short_name": "ALL'IN DENIM",
+  "icons": [
+    {
+      "src": "/assets/logo/favicon/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/logo/favicon/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#071F3A",
+  "background_color": "#F7F4EE",
+  "display": "standalone"
+}

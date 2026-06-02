@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">ALL'IN DENIM circular submark</title>
+  <desc id="desc">Circular denim-inspired AD submark with stitched border.</desc>
+  <rect width="320" height="320" fill="transparent"/>
+  <circle cx="160" cy="160" r="132" fill="#071F3A"/>
+  <circle cx="160" cy="160" r="116" stroke="#B9783E" stroke-width="4" stroke-dasharray="8 9"/>
+  <path d="M88 214 L137 91 L186 214" stroke="#FFFFFF" stroke-width="16" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M158 99 H187 C225 99 252 126 252 160 C252 194 225 221 187 221 H158" stroke="#FFFFFF" stroke-width="16" stroke-linecap="square" stroke-linejoin="round"/>
+  <line x1="125" y1="181" x2="161" y2="181" stroke="#B9783E" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 8"/>
+  <circle cx="160" cy="221" r="8" fill="#B9783E"/>
+  <circle cx="160" cy="221" r="3" fill="#071F3A"/>
+</svg>

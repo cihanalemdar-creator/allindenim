@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">ALL'IN DENIM favicon</title>
+  <desc id="desc">Circular ALL'IN DENIM AD favicon.</desc>
+  <rect width="512" height="512" rx="96" fill="#071F3A"/>
+  <circle cx="256" cy="256" r="206" stroke="#B9783E" stroke-width="12" stroke-dasharray="26 24"/>
+  <path d="M132 352 L219 145 L306 352" stroke="#FFFFFF" stroke-width="34" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M270 158 H318 C380 158 424 202 424 256 C424 310 380 354 318 354 H270" stroke="#FFFFFF" stroke-width="34" stroke-linecap="square" stroke-linejoin="round"/>
+  <line x1="203" y1="297" x2="265" y2="297" stroke="#B9783E" stroke-width="10" stroke-linecap="round" stroke-dasharray="18 18"/>
+  <circle cx="256" cy="356" r="18" fill="#B9783E"/>
+  <circle cx="256" cy="356" r="7" fill="#071F3A"/>
+</svg>
