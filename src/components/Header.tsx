@@ -50,17 +50,17 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-stone-200 bg-stone-50/95 backdrop-blur">
       <Container>
-        <div className="flex min-h-[4.75rem] items-center justify-between gap-5">
+        <div className="flex min-h-[5rem] items-center justify-between gap-5">
           <Link
             href="/"
             className="flex min-w-0 items-center gap-3 rounded-panel pr-2"
             aria-label="Allin Denim home"
           >
-            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-panel bg-ink-900 shadow-line">
-              <BrandLogo variant="white" markOnly decorative priority className="h-8 w-8" />
+            <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-panel bg-ink-900 shadow-line sm:h-[3.75rem] sm:w-[3.75rem]">
+              <BrandLogo variant="white" markOnly decorative priority className="h-10 w-10 sm:h-11 sm:w-11" />
             </span>
             <span className="hidden min-w-0 sm:block">
-              <BrandLogo decorative priority className="w-[146px] md:w-[164px]" />
+              <BrandLogo decorative priority className="w-[174px] md:w-[196px]" />
             </span>
           </Link>
           <nav className="hidden items-center gap-6 lg:flex xl:gap-7" aria-label="Main navigation">
