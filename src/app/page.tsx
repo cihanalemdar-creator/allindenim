@@ -43,26 +43,26 @@ const capabilities = [
   {
     title: "Knitwear",
     description:
-      "T-shirts, sweatshirts, hoodies, tops, jersey basics, and knit private label collections.",
+      "T-shirts, sweatshirts, hoodies, babywear basics, jersey sets, and knit private label collections.",
     href: "/knitwear-manufacturing",
     icon: <AssetIcon name="knitwear" />,
-    tags: ["T-shirts", "Hoodies", "Joggers"]
+    tags: ["T-shirts", "Babywear", "Hoodies"]
   },
   {
     title: "Underwear & Loungewear",
     description:
-      "Basics, sleepwear, loungewear, comfortwear, fit-sensitive products, and packaging support.",
+      "Underwear, sleepwear, loungewear, baby bodywear, fit-sensitive products, and packaging support.",
     href: "/underwear-loungewear-manufacturing",
     icon: <AssetIcon name="underwear-loungewear" />,
-    tags: ["Underwear", "Pajamas", "Bodywear"]
+    tags: ["Underwear", "Baby bodywear", "Pajamas"]
   },
   {
     title: "Ready-to-Wear",
     description:
-      "Multi-category apparel collections coordinated through sourcing, sampling, production, QC, and export steps.",
+      "Multi-category apparel collections including adult, baby, and kids' styles coordinated through sourcing, sampling, production, QC, and export steps.",
     href: "/ready-to-wear-private-label",
     icon: <AssetIcon name="manufacturing" />,
-    tags: ["Collections", "Packaging", "Export"]
+    tags: ["Collections", "Baby & kids", "Export"]
   },
   {
     title: "Private Label Production",
@@ -152,7 +152,15 @@ const qualityItems = [
   "Final inspection coordination",
   "Measurement control against approved specs",
   "Packaging and labeling review",
+  "Testing and compliance documentation upon request",
   "Export documentation coordination"
+];
+
+const complianceStandards = [
+  "OEKO-TEX Standard 100 and close-to-skin product testing support",
+  "GOTS, OCS, GRS, or RCS documentation for organic or recycled material claims",
+  "BSCI, Sedex/SMETA, or WRAP audit alignment depending on production partner scope",
+  "EU and U.S. market labeling, fiber composition, REACH-related, and children's apparel requirements"
 ];
 
 const buyerExpectations = [
@@ -205,7 +213,7 @@ const faqs = [
   {
     question: "What product categories do you cover?",
     answer:
-      "Core categories include denim and jeans, woven apparel, knitwear, underwear and loungewear, ready-to-wear, activewear, and private label apparel."
+      "Core categories include denim and jeans, woven apparel, knitwear, underwear and loungewear, baby and children's apparel, ready-to-wear, activewear, and private label apparel."
   },
   {
     question: "Can you manage sourcing and quality control?",
@@ -324,6 +332,39 @@ export default function Home() {
 
       <section className="bg-white py-20 sm:py-24">
         <Container>
+          <div className="grid gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:items-start">
+            <div>
+              <SectionHeader
+                eyebrow="Quality standards"
+                title="Compliance support for buyers with defined quality requirements."
+                description="When buyers require specific testing, audit, labeling, or certification documentation, Allin Denim can coordinate the relevant review with suitable production partners, suppliers, and laboratories according to product type and target market."
+              />
+              <div className="mt-8">
+                <Button href="/quality-control-compliance" variant="secondary">
+                  View Quality & Compliance
+                </Button>
+              </div>
+            </div>
+            <div className="grid gap-3">
+              {complianceStandards.map((item) => (
+                <div
+                  key={item}
+                  className="flex gap-4 rounded-panel border border-stone-200 bg-cotton p-5 shadow-line"
+                >
+                  <CheckCircle2
+                    className="mt-1 h-5 w-5 shrink-0 text-denim-700"
+                    aria-hidden="true"
+                  />
+                  <p className="text-sm font-medium leading-7 text-stone-700">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-cotton py-20 sm:py-24">
+        <Container>
           <div className="grid gap-12 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
             <div>
               <SectionHeader
@@ -347,7 +388,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="bg-cotton py-20 sm:py-24">
+      <section className="bg-white py-20 sm:py-24">
         <Container>
           <div className="grid gap-8 lg:grid-cols-3">
             <div className="lg:col-span-1">

@@ -96,7 +96,7 @@ export const categoryPages: CategoryPageData[] = [
     h1: "Woven Apparel Manufacturing in Turkey",
     seoTitle: "Woven Apparel Manufacturer Turkey | Shirt & Garment Production",
     metaDescription:
-      "Allin Denim supports woven apparel manufacturing in Turkey for shirts, blouses, dresses, trousers, skirts, jackets, and uniform-style products with sourcing, sampling, and production management.",
+      "Allin Denim supports woven apparel manufacturing in Turkey for shirts, blouses, dresses, trousers, skirts, jackets, baby and kids' woven styles, and uniform-style products with sourcing, sampling, and production management.",
     keywords: [
       "woven apparel manufacturer Turkey",
       "woven garment production Turkey",
@@ -122,6 +122,7 @@ export const categoryPages: CategoryPageData[] = [
       "Trousers",
       "Skirts",
       "Jackets",
+      "Baby and kids' woven styles",
       "Uniform-style products"
     ],
     materials: [
@@ -145,6 +146,7 @@ export const categoryPages: CategoryPageData[] = [
       "Measurement and fit checks",
       "Stitching and workmanship review",
       "Fabric, trim, and label verification",
+      "Labeling and safety details reviewed for baby and kids' styles where required",
       "Inline production checks",
       "Final inspection coordination"
     ],
@@ -157,7 +159,7 @@ export const categoryPages: CategoryPageData[] = [
     h1: "Knitwear Manufacturing in Turkey",
     seoTitle: "Knitwear Manufacturer Turkey | T-Shirt & Hoodie Production",
     metaDescription:
-      "Allin Denim supports knitwear manufacturing in Turkey for t-shirts, sweatshirts, hoodies, polo shirts, joggers, casualwear, jersey, fleece, rib, interlock, and pique options.",
+      "Allin Denim supports knitwear manufacturing in Turkey for t-shirts, sweatshirts, hoodies, polo shirts, joggers, casualwear, babywear basics, jersey, fleece, rib, interlock, and pique options.",
     keywords: [
       "knitwear manufacturer Turkey",
       "t-shirt manufacturer Turkey",
@@ -165,7 +167,7 @@ export const categoryPages: CategoryPageData[] = [
     ],
     eyebrow: "Knit category",
     description:
-      "Allin Denim supports knit apparel programs for brands seeking comfortable casualwear, jersey basics, sweatshirts, hoodies, and private label knit collections made through Turkish suppliers.",
+      "Allin Denim supports knit apparel programs for brands seeking comfortable casualwear, jersey basics, babywear basics, sweatshirts, hoodies, and private label knit collections made through Turkish suppliers.",
     imageLabel: "Future knitwear, jersey, or casualwear image",
     icon: <AssetIcon name="knitwear" />,
     capabilities: [
@@ -182,7 +184,9 @@ export const categoryPages: CategoryPageData[] = [
       "Hoodies",
       "Polo shirts",
       "Joggers",
-      "Casualwear"
+      "Casualwear",
+      "Babywear basics",
+      "Kids' jersey sets"
     ],
     materials: [
       "Jersey",
@@ -191,6 +195,7 @@ export const categoryPages: CategoryPageData[] = [
       "Interlock",
       "Pique",
       "Cotton and cotton blends",
+      "Soft cotton fabrics for baby and kids' basics",
       "Elastic trims, drawcords, labels, and packaging"
     ],
     support: [
@@ -206,6 +211,7 @@ export const categoryPages: CategoryPageData[] = [
       "Print or embroidery placement checks",
       "Seam and finishing review",
       "Label and packaging verification",
+      "Destination-market testing and labeling review for baby or children's apparel where required",
       "Final inspection coordination"
     ],
     related: [
@@ -221,7 +227,7 @@ export const categoryPages: CategoryPageData[] = [
     h1: "Underwear & Loungewear Manufacturing in Turkey",
     seoTitle: "Underwear Manufacturer Turkey | Loungewear Production Partner",
     metaDescription:
-      "Allin Denim supports underwear and loungewear manufacturing in Turkey for underwear, pajamas, basic bodywear, soft fabrics, elastic trims, comfort-focused production, and private label underwear.",
+      "Allin Denim supports underwear and loungewear manufacturing in Turkey for underwear, pajamas, baby bodywear, basic bodywear, soft fabrics, elastic trims, comfort-focused production, and private label underwear.",
     keywords: [
       "underwear manufacturer Turkey",
       "loungewear manufacturer Turkey",
@@ -229,7 +235,7 @@ export const categoryPages: CategoryPageData[] = [
     ],
     eyebrow: "Comfort category",
     description:
-      "Allin Denim helps brands coordinate comfort-focused underwear, loungewear, pajamas, and bodywear production with attention to soft fabrics, elastic trims, fit, packaging, and quality control.",
+      "Allin Denim helps brands coordinate comfort-focused underwear, loungewear, pajamas, baby bodywear, and basic bodywear production with attention to soft fabrics, elastic trims, fit, packaging, and quality control.",
     imageLabel: "Future underwear, loungewear, or soft fabric image",
     icon: <AssetIcon name="underwear-loungewear" />,
     capabilities: [
@@ -244,6 +250,7 @@ export const categoryPages: CategoryPageData[] = [
       "Underwear",
       "Loungewear",
       "Pajamas",
+      "Baby bodywear",
       "Basic bodywear",
       "Comfort basics",
       "Private label underwear"
@@ -253,6 +260,7 @@ export const categoryPages: CategoryPageData[] = [
       "Modal and viscose blends",
       "Rib fabrics",
       "Stretch fabrics",
+      "Soft cotton fabrics for close-to-skin baby products",
       "Elastic trims",
       "Soft labels",
       "Retail-ready packaging"
@@ -269,6 +277,7 @@ export const categoryPages: CategoryPageData[] = [
       "Measurement and fit control",
       "Elastic and trim placement checks",
       "Softness and comfort-focused review",
+      "Close-to-skin testing and babywear labeling requirements reviewed when requested",
       "Packaging and label checks",
       "Final inspection coordination"
     ],
@@ -281,7 +290,7 @@ export const categoryPages: CategoryPageData[] = [
     h1: "Ready-to-Wear & Private Label Apparel Production in Turkey",
     seoTitle: "Private Label Clothing Turkey | Ready-to-Wear Manufacturer",
     metaDescription:
-      "Allin Denim supports private label clothing and ready-to-wear apparel production in Turkey, including collection planning, sourcing, sampling, production coordination, packaging, and export support.",
+      "Allin Denim supports private label clothing and ready-to-wear apparel production in Turkey, including adult, baby, and kids' collection planning, sourcing, sampling, production coordination, packaging, and export support.",
     keywords: [
       "private label clothing Turkey",
       "ready to wear manufacturer Turkey",
@@ -289,7 +298,7 @@ export const categoryPages: CategoryPageData[] = [
     ],
     eyebrow: "Private label production",
     description:
-      "Allin Denim helps brands build and manage private label apparel programs in Turkey, from collection planning and sourcing to sampling, production coordination, packaging, quality control, and export support.",
+      "Allin Denim helps brands build and manage private label apparel programs in Turkey, including adult, baby, and kids' ranges, from collection planning and sourcing to sampling, production coordination, packaging, quality control, and export support.",
     imageLabel: "Future private label collection or packaging image",
     icon: <AssetIcon name="private-label" />,
     capabilities: [
@@ -306,6 +315,7 @@ export const categoryPages: CategoryPageData[] = [
       "Private label woven apparel",
       "Private label knitwear",
       "Private label underwear and loungewear",
+      "Baby and kids' private label basics",
       "Multi-category apparel programs"
     ],
     materials: [
@@ -328,6 +338,7 @@ export const categoryPages: CategoryPageData[] = [
       "Sample approval tracking",
       "Measurement and workmanship checks",
       "Label and packaging verification",
+      "Testing, labeling, and documentation coordination for baby or children's styles where required",
       "Inline production follow-up",
       "Final inspection coordination"
     ],

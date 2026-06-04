@@ -28,7 +28,7 @@ const faqs = [
   {
     question: "What product categories does Allin Denim cover?",
     answer:
-      "Core categories include denim and jeans, woven apparel, knitwear, underwear and loungewear, ready-to-wear, activewear, and private label apparel."
+      "Core categories include denim and jeans, woven apparel, knitwear, underwear and loungewear, baby and children's apparel, ready-to-wear, activewear, and private label apparel."
   },
   {
     question: "Do you work with startups?",

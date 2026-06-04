@@ -7,6 +7,7 @@ const categories = [
   "Woven Apparel",
   "Knitwear",
   "Underwear & Loungewear",
+  "Babywear / Children's Apparel",
   "Ready-to-Wear / Private Label",
   "Activewear / Sportswear",
   "Other / Not Sure Yet"

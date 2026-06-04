@@ -143,7 +143,7 @@ export function CategoryPage({ category }: CategoryPageProps) {
             <SectionHeader
               eyebrow="Related categories"
               title="Explore other apparel production categories."
-              description="Many international brands combine denim, woven, knitwear, underwear, loungewear, and private label production in one sourcing program."
+              description="Many international brands combine denim, woven, knitwear, underwear, loungewear, baby and children's apparel, and private label production in one sourcing program."
             />
             <Button href="/product-categories" variant="secondary">
               All Categories
@@ -186,7 +186,7 @@ export function CategoryOverviewPage() {
       <PageHero
         eyebrow="Product categories"
         title="Apparel Product Categories Manufactured and Sourced in Turkey"
-        description="Allin Denim supports international brands across denim, woven apparel, knitwear, underwear, loungewear, ready-to-wear, and private label apparel through sourcing, sampling, production management, QC, and export coordination."
+        description="Allin Denim supports international brands across denim, woven apparel, knitwear, underwear, loungewear, baby and children's apparel, ready-to-wear, and private label apparel through sourcing, sampling, production management, QC, and export coordination."
         primaryCta={{ label: "Start a Production Inquiry", href: "/contact" }}
         secondaryCta={{ label: "Explore Capabilities", href: "/capabilities" }}
         imageLabel="Future multi-category apparel visual"

@@ -125,7 +125,7 @@ export default function AboutPage() {
             <SectionHeader
               eyebrow="Our apparel focus"
               title="Denim expertise with wider apparel category coverage."
-              description="Allin Denim is built around denim strength while also supporting woven apparel, knitwear, underwear, loungewear, ready-to-wear, and private label programs."
+              description="Allin Denim is built around denim strength while also supporting woven apparel, knitwear, underwear, loungewear, baby and children's styles, ready-to-wear, and private label programs."
             />
             <Button href="/product-categories" variant="secondary">
               View Product Categories
