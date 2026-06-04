@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { ChevronDown, Menu, X } from "lucide-react";
+import type { MouseEvent, PointerEvent } from "react";
 import { BrandLogo } from "@/components/BrandLogo";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
@@ -47,6 +50,10 @@ const categoryNav = [
 ];
 
 export function Header() {
+  function closeDetails(event: MouseEvent<HTMLDetailsElement> | PointerEvent<HTMLDetailsElement>) {
+    event.currentTarget.removeAttribute("open");
+  }
+
   return (
     <header className="sticky top-0 z-50 border-b border-stone-200 bg-stone-50/95 backdrop-blur">
       <Container>
@@ -73,7 +80,11 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
-            <details className="group relative">
+            <details
+              className="group relative"
+              onMouseLeave={closeDetails}
+              onPointerLeave={closeDetails}
+            >
               <summary className="inline-flex cursor-pointer list-none items-center gap-1.5 text-sm font-semibold text-stone-700 transition-colors marker:hidden hover:text-denim-700">
                 Product Categories
                 <ChevronDown
@@ -134,7 +145,11 @@ export function Header() {
                   {item.label}
                 </Link>
               ))}
-              <details className="mt-2 rounded-panel border border-stone-200 bg-stone-50 p-2">
+              <details
+                className="mt-2 rounded-panel border border-stone-200 bg-stone-50 p-2"
+                onMouseLeave={closeDetails}
+                onPointerLeave={closeDetails}
+              >
                 <summary className="flex cursor-pointer list-none items-center justify-between rounded-panel px-3 py-3 text-sm font-semibold text-ink-900 marker:hidden">
                   Product Categories
                   <ChevronDown className="h-4 w-4" aria-hidden="true" />
