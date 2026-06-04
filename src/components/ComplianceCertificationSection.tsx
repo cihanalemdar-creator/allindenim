@@ -120,8 +120,7 @@ export function ComplianceCertificationSection({
                     </div>
                   </div>
                   <p className="mt-auto pt-5 text-xs font-medium leading-5 text-stone-500">
-                    Documentation can be provided upon request where applicable. Official logos are
-                    displayed only after certificate verification.
+                    Documentation can be provided upon request where applicable.
                   </p>
                 </div>
               </article>
