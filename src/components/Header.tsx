@@ -85,7 +85,7 @@ export function Header() {
                   aria-hidden="true"
                 />
               </button>
-              <div className="invisible absolute left-1/2 top-8 w-[34rem] -translate-x-1/2 pt-5 opacity-0 transition duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+              <div className="invisible absolute left-1/2 top-full w-[34rem] -translate-x-1/2 pt-3 opacity-0 transition duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
                 <div className="grid gap-2 rounded-panel border border-stone-200 bg-white p-3 shadow-soft">
                   {categoryNav.map((item) => (
                     <Link
