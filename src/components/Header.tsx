@@ -1,9 +1,50 @@
 import Link from "next/link";
-import { Menu } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { BrandLogo } from "@/components/BrandLogo";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
-import { siteConfig } from "@/lib/site";
+
+const mainNav = [
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/capabilities", label: "Capabilities" },
+  { href: "/quality-control-compliance", label: "Quality" },
+  { href: "/sourcing-in-turkey", label: "Sourcing" },
+  { href: "/faq", label: "FAQ" }
+];
+
+const categoryNav = [
+  {
+    href: "/product-categories",
+    label: "Category Overview",
+    description: "All apparel categories"
+  },
+  {
+    href: "/denim-jeans-manufacturing",
+    label: "Denim & Jeans",
+    description: "Jeans, jackets, washed denim"
+  },
+  {
+    href: "/woven-apparel-manufacturing",
+    label: "Woven Apparel",
+    description: "Shirts, dresses, trousers"
+  },
+  {
+    href: "/knitwear-manufacturing",
+    label: "Knitwear",
+    description: "T-shirts, hoodies, jersey basics"
+  },
+  {
+    href: "/underwear-loungewear-manufacturing",
+    label: "Underwear & Loungewear",
+    description: "Underwear, pajamas, baby bodywear"
+  },
+  {
+    href: "/ready-to-wear-private-label",
+    label: "Private Label Apparel",
+    description: "Adult, baby, and kids' collections"
+  }
+];
 
 export function Header() {
   return (
@@ -23,7 +64,39 @@ export function Header() {
             </span>
           </Link>
           <nav className="hidden items-center gap-6 lg:flex xl:gap-7" aria-label="Main navigation">
-            {siteConfig.nav.map((item) => (
+            {mainNav.slice(0, 3).map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-sm font-semibold text-stone-700 transition-colors hover:text-denim-700"
+              >
+                {item.label}
+              </Link>
+            ))}
+            <details className="group relative">
+              <summary className="inline-flex cursor-pointer list-none items-center gap-1.5 text-sm font-semibold text-stone-700 transition-colors marker:hidden hover:text-denim-700">
+                Product Categories
+                <ChevronDown
+                  className="h-4 w-4 transition-transform group-open:rotate-180"
+                  aria-hidden="true"
+                />
+              </summary>
+              <div className="absolute left-1/2 top-8 w-[34rem] -translate-x-1/2 pt-5">
+                <div className="grid gap-2 rounded-panel border border-stone-200 bg-white p-3 shadow-soft">
+                  {categoryNav.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="grid gap-1 rounded-panel px-4 py-3 transition-colors hover:bg-stone-100 focus-visible:bg-stone-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-denim-700/20"
+                    >
+                      <span className="text-sm font-semibold text-ink-900">{item.label}</span>
+                      <span className="text-xs leading-5 text-stone-600">{item.description}</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </details>
+            {mainNav.slice(3).map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
@@ -39,15 +112,20 @@ export function Header() {
             </Button>
           </div>
           <details className="group relative lg:hidden">
-            <summary className="inline-flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-panel border border-stone-300 bg-white text-ink-900 marker:hidden">
+            <summary
+              className="inline-flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-panel border border-stone-300 bg-white text-ink-900 shadow-line marker:hidden"
+              aria-label="Open navigation menu"
+            >
               <span className="sr-only">Open navigation menu</span>
-              <Menu aria-hidden="true" className="h-5 w-5" />
+              <Menu aria-hidden="true" className="h-5 w-5 group-open:hidden" />
+              <X aria-hidden="true" className="hidden h-5 w-5 group-open:block" />
             </summary>
             <nav
-              className="absolute right-0 top-14 w-[min(20rem,calc(100vw-2.5rem))] rounded-panel border border-stone-200 bg-white p-3 shadow-soft"
+              id="mobile-navigation"
+              className="absolute right-0 top-14 max-h-[calc(100vh-6rem)] w-[min(23rem,calc(100vw-2rem))] overflow-y-auto rounded-panel border border-stone-200 bg-white p-3 shadow-soft"
               aria-label="Mobile navigation"
             >
-              {siteConfig.nav.map((item) => (
+              {mainNav.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
@@ -56,9 +134,29 @@ export function Header() {
                   {item.label}
                 </Link>
               ))}
+              <details className="mt-2 rounded-panel border border-stone-200 bg-stone-50 p-2">
+                <summary className="flex cursor-pointer list-none items-center justify-between rounded-panel px-3 py-3 text-sm font-semibold text-ink-900 marker:hidden">
+                  Product Categories
+                  <ChevronDown className="h-4 w-4" aria-hidden="true" />
+                </summary>
+                <div className="grid gap-1 pb-1">
+                  {categoryNav.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="grid gap-0.5 rounded-panel px-3 py-3 text-sm font-medium text-stone-700 hover:bg-white hover:text-denim-700"
+                    >
+                      <span>{item.label}</span>
+                      <span className="text-xs font-normal leading-5 text-stone-500">
+                        {item.description}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </details>
               <Link
                 href="/contact"
-                className="mt-2 block rounded-panel bg-ink-900 px-3 py-3 text-sm font-semibold text-white"
+                className="mt-3 block rounded-panel bg-ink-900 px-3 py-3 text-center text-sm font-semibold text-white"
               >
                 Start Production Inquiry
               </Link>
