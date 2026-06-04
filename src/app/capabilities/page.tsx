@@ -66,6 +66,15 @@ const capabilities = [
   }
 ];
 
+const categoryCoverage = [
+  "Denim & jeans",
+  "Woven apparel",
+  "Knitwear and jersey basics",
+  "Underwear and loungewear",
+  "Babywear and children's apparel",
+  "Ready-to-wear and private label collections"
+];
+
 export default function CapabilitiesPage() {
   const sourcingImage = getVisualAsset("fabric-trim-sourcing");
 
@@ -99,6 +108,31 @@ export default function CapabilitiesPage() {
             {capabilities.map((item) => (
               <CapabilityCard key={item.title} {...item} />
             ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-cotton py-20 sm:py-24">
+        <Container>
+          <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+            <SectionHeader
+              eyebrow="Category coverage"
+              title="Production support across adult, baby, and children's apparel categories."
+              description="Allin Denim can review category-specific production routes according to product type, material requirements, target market, order volume, compliance needs, and available supplier fit."
+            />
+            <div className="grid gap-3 sm:grid-cols-2">
+              {categoryCoverage.map((item) => (
+                <div
+                  key={item}
+                  className="flex min-h-20 items-center gap-4 rounded-panel border border-stone-200 bg-white p-5 shadow-line"
+                >
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-panel bg-denim-100 text-denim-800">
+                    <AssetIcon name="private-label" />
+                  </span>
+                  <p className="text-sm font-semibold leading-6 text-ink-900">{item}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </Container>
       </section>
