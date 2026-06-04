@@ -1,8 +1,5 @@
-"use client";
-
 import Link from "next/link";
 import { ChevronDown, Menu, X } from "lucide-react";
-import type { MouseEvent, PointerEvent } from "react";
 import { BrandLogo } from "@/components/BrandLogo";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
@@ -50,10 +47,6 @@ const categoryNav = [
 ];
 
 export function Header() {
-  function closeDetails(event: MouseEvent<HTMLDetailsElement> | PointerEvent<HTMLDetailsElement>) {
-    event.currentTarget.removeAttribute("open");
-  }
-
   return (
     <header className="sticky top-0 z-50 border-b border-stone-200 bg-stone-50/95 backdrop-blur">
       <Container>
@@ -80,19 +73,19 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
-            <details
-              className="group relative"
-              onMouseLeave={closeDetails}
-              onPointerLeave={closeDetails}
-            >
-              <summary className="inline-flex cursor-pointer list-none items-center gap-1.5 text-sm font-semibold text-stone-700 transition-colors marker:hidden hover:text-denim-700">
+            <div className="group relative">
+              <button
+                type="button"
+                className="inline-flex items-center gap-1.5 text-sm font-semibold text-stone-700 transition-colors hover:text-denim-700 focus-visible:text-denim-700 focus-visible:outline-none"
+                aria-haspopup="true"
+              >
                 Product Categories
                 <ChevronDown
-                  className="h-4 w-4 transition-transform group-open:rotate-180"
+                  className="h-4 w-4 transition-transform group-hover:rotate-180 group-focus-within:rotate-180"
                   aria-hidden="true"
                 />
-              </summary>
-              <div className="absolute left-1/2 top-8 w-[34rem] -translate-x-1/2 pt-5">
+              </button>
+              <div className="invisible absolute left-1/2 top-8 w-[34rem] -translate-x-1/2 pt-5 opacity-0 transition duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
                 <div className="grid gap-2 rounded-panel border border-stone-200 bg-white p-3 shadow-soft">
                   {categoryNav.map((item) => (
                     <Link
@@ -106,7 +99,7 @@ export function Header() {
                   ))}
                 </div>
               </div>
-            </details>
+            </div>
             {mainNav.slice(3).map((item) => (
               <Link
                 key={item.href}
@@ -145,11 +138,7 @@ export function Header() {
                   {item.label}
                 </Link>
               ))}
-              <details
-                className="mt-2 rounded-panel border border-stone-200 bg-stone-50 p-2"
-                onMouseLeave={closeDetails}
-                onPointerLeave={closeDetails}
-              >
+              <details className="mt-2 rounded-panel border border-stone-200 bg-stone-50 p-2">
                 <summary className="flex cursor-pointer list-none items-center justify-between rounded-panel px-3 py-3 text-sm font-semibold text-ink-900 marker:hidden">
                   Product Categories
                   <ChevronDown className="h-4 w-4" aria-hidden="true" />
