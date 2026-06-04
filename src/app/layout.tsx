@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Inter } from "next/font/google";
+import { CookieConsent } from "@/components/CookieConsent";
+import { FirstVisitLoader } from "@/components/FirstVisitLoader";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { SiteJsonLd } from "@/components/JsonLd";
@@ -46,6 +48,8 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <CookieConsent />
+        <FirstVisitLoader />
       </body>
     </html>
   );
