@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ClipboardCheck, FileCheck2, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/Button";
 import { Container } from "@/components/Container";
@@ -6,40 +7,46 @@ import { cn } from "@/lib/utils";
 
 const complianceCards = [
   {
-    title: "OEKO-TEX® Standard 100",
+    title: "OEKO-TEX Standard 100",
     description:
       "For textile products tested for harmful substances. Especially relevant for apparel, underwear, babywear, socks, and close-to-skin products.",
-    placeholder: "Certification logo to be added after verification"
+    placeholder: "Certification logo to be added after verification",
+    placeholderImage: "/assets/compliance/oeko-tex-placeholder.svg"
   },
   {
     title: "Organic & Recycled Material Standards",
     description:
       "GOTS, OCS, GRS, or RCS documentation can be supported where organic cotton or recycled material claims are required.",
-    placeholder: "Verified documentation required before display"
+    placeholder: "Verified documentation required before display",
+    placeholderImage: "/assets/compliance/organic-recycled-placeholder.svg"
   },
   {
     title: "Social Compliance Audits",
     description:
       "Production can be aligned with buyer-requested social compliance frameworks such as BSCI, Sedex/SMETA, or WRAP, depending on factory availability and audit requirements.",
-    placeholder: "Logo placeholder"
+    placeholder: "Logo placeholder",
+    placeholderImage: "/assets/compliance/social-compliance-placeholder.svg"
   },
   {
     title: "EU & US Market Compliance",
     description:
       "Support can be provided for REACH-related chemical restrictions, textile labeling, fiber composition, country of origin marking, and product-specific requirements for European and U.S. markets.",
-    placeholder: "Verified documentation required before display"
+    placeholder: "Verified documentation required before display",
+    placeholderImage: "/assets/compliance/market-compliance-placeholder.svg"
   },
   {
     title: "Children's Apparel Requirements",
     description:
-      "For baby and children’s clothing, additional requirements such as OEKO-TEX® Class I, CPSIA/CPSC-related testing, flammability checks, tracking labels, and drawstring safety standards can be considered according to the destination market.",
-    placeholder: "Certification logo to be added after verification"
+      "For baby and children's clothing, additional requirements such as OEKO-TEX Class I, CPSIA/CPSC-related testing, flammability checks, tracking labels, and drawstring safety standards can be considered according to the destination market.",
+    placeholder: "Certification logo to be added after verification",
+    placeholderImage: "/assets/compliance/childrens-apparel-placeholder.svg"
   },
   {
     title: "Chemical & Environmental Management",
     description:
       "For dyeing, washing, printing, and finishing processes, additional documentation related to chemical management, wastewater, and environmental performance can be reviewed when required by the buyer.",
-    placeholder: "Logo placeholder"
+    placeholder: "Logo placeholder",
+    placeholderImage: "/assets/compliance/chemical-environmental-placeholder.svg"
   }
 ];
 
@@ -89,11 +96,18 @@ export function ComplianceCertificationSection({
                 className="rounded-panel border border-stone-200 bg-white p-5 shadow-line"
               >
                 {/* Replace this placeholder only with verified official certification logo files. */}
-                <div className="flex min-h-24 items-center justify-center rounded-panel border border-dashed border-stone-300 bg-stone-50 px-4 text-center">
-                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-stone-500">
-                    {card.placeholder}
-                  </p>
+                <div className="relative flex min-h-32 items-center justify-center overflow-hidden rounded-panel border border-dashed border-stone-300 bg-stone-50 px-4 text-center">
+                  <Image
+                    src={card.placeholderImage}
+                    alt={card.placeholder}
+                    width={320}
+                    height={160}
+                    className="h-full max-h-32 w-full object-contain"
+                  />
                 </div>
+                <p className="mt-3 text-xs font-medium leading-5 text-stone-500">
+                  Reference visual only. Official logo display requires verified documentation.
+                </p>
                 <div className="mt-5 flex gap-3">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-panel bg-denim-100 text-denim-800">
                     {index % 2 === 0 ? (

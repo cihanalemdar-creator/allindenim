@@ -74,7 +74,9 @@ const reviewItems = [
 ];
 
 export default function QualityControlCompliancePage() {
-  const qualityImage = getVisualAsset("quality-control");
+  const qualityHeroImage = getVisualAsset("quality-control-hero") ?? getVisualAsset("quality-control");
+  const complianceImage = getVisualAsset("compliance-documentation") ?? getVisualAsset("quality-control");
+  const testingImage = getVisualAsset("product-testing-inspection");
 
   return (
     <>
@@ -91,8 +93,8 @@ export default function QualityControlCompliancePage() {
         primaryCta={{ label: "Discuss Quality Requirements", href: "/contact" }}
         secondaryCta={{ label: "View Production Process", href: "/production-process" }}
         imageLabel="Future inspection, measurement, or packaging review image"
-        imageSrc={qualityImage?.path}
-        imageAlt={qualityImage?.alt}
+        imageSrc={qualityHeroImage?.path}
+        imageAlt={qualityHeroImage?.alt}
       />
 
       <section className="bg-white py-20 sm:py-24">
@@ -114,10 +116,10 @@ export default function QualityControlCompliancePage() {
         <Container>
           <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
             <PlaceholderImage
-              label="Quality control inspection"
+              label="Compliance documentation review"
               ratio="wide"
-              src={qualityImage?.path}
-              altText={qualityImage?.alt}
+              src={complianceImage?.path}
+              altText={complianceImage?.alt}
             />
             <div>
               <SectionHeader
@@ -141,6 +143,26 @@ export default function QualityControlCompliancePage() {
       <ComplianceCertificationSection className="bg-white" />
 
       <section className="bg-cotton py-20 sm:py-24">
+        <Container>
+          <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+            <div>
+              <SectionHeader
+                eyebrow="Testing coordination"
+                title="Product testing and inspection requirements can be planned before production."
+                description="For close-to-skin products, children's apparel, performance materials, labeling requirements, or buyer-specific test protocols, documentation and testing steps can be reviewed before supplier confirmation and production planning."
+              />
+            </div>
+            <PlaceholderImage
+              label="Product testing and inspection coordination"
+              ratio="wide"
+              src={testingImage?.path}
+              altText={testingImage?.alt}
+            />
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-white py-20 sm:py-24">
         <Container>
           <div className="grid gap-5 md:grid-cols-3">
             <CapabilityCard

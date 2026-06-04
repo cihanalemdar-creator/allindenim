@@ -81,6 +81,30 @@ export const visualAssets: VisualAsset[] = [
     alt: "Garment measurement and quality control setup on a clean inspection table"
   },
   {
+    id: "quality-control-hero",
+    label: "Quality Control Hero",
+    path: "/assets/images/preview/quality-control-hero.webp",
+    ratio: "wide",
+    usedFor: ["Quality Control & Compliance hero"],
+    alt: "Folded apparel, denim samples, fabric swatches, measuring tools, and quality control checklist on a clean inspection table"
+  },
+  {
+    id: "compliance-documentation",
+    label: "Compliance Documentation",
+    path: "/assets/images/preview/compliance-documentation.webp",
+    ratio: "wide",
+    usedFor: ["Quality Control & Compliance documentation section"],
+    alt: "Fabric swatches, generic laboratory reports, fiber composition documents, trims, labels, and compliance documentation folder"
+  },
+  {
+    id: "product-testing-inspection",
+    label: "Product Testing & Inspection",
+    path: "/assets/images/preview/product-testing-inspection.webp",
+    ratio: "wide",
+    usedFor: ["Quality Control & Compliance testing section"],
+    alt: "Garment sample, denim and knit swatches, measuring tools, sample vials, care labels, and inspection checklist"
+  },
+  {
     id: "packaging-export",
     label: "Packaging & Export",
     path: "/assets/images/preview/section-packaging-export.webp",

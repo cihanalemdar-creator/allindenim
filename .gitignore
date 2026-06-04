@@ -3,6 +3,7 @@ node_modules
 .tools
 .tmp
 .backups
+certification-logo-sources
 
 # Next.js
 .next

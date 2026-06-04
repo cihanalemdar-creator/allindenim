@@ -4,6 +4,7 @@ node_modules
 .tools
 .tmp
 .backups
+certification-logo-sources
 .vercel
 
 .next-dev.log
