@@ -1,9 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 320 160" role="img" aria-labelledby="title desc">
-  <title id="title">Chemical and environmental management placeholder</title>
-  <desc id="desc">Neutral placeholder for chemical and environmental documentation references.</desc>
-  <rect width="320" height="160" rx="10" fill="#F8F7F4"/>
-  <rect x="14" y="14" width="292" height="132" rx="8" fill="none" stroke="#D8D5CE" stroke-width="1.5" stroke-dasharray="6 8"/>
-  <text x="160" y="58" text-anchor="middle" fill="#173A63" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">CHEMICAL / ENVIRONMENTAL</text>
-  <text x="160" y="88" text-anchor="middle" fill="#6B665F" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">REVIEW REQUIRED</text>
-  <text x="160" y="116" text-anchor="middle" fill="#8A847B" font-family="Arial, Helvetica, sans-serif" font-size="11">For dyeing, washing, printing, and finishing scope</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320" role="img" aria-labelledby="title desc">
+  <title id="title">Chemical and environmental management support visual</title>
+  <desc id="desc">A neutral Allin Denim compliance visual for chemical and environmental management documentation support, not an official certification logo.</desc>
+  <rect width="640" height="320" rx="18" fill="#F8F7F4"/>
+  <rect x="20" y="20" width="600" height="280" rx="16" fill="none" stroke="#D8D5CE" stroke-width="2"/>
+  <circle cx="92" cy="86" r="38" fill="#173A63"/>
+  <path d="M89 63v41c0 12 10 22 22 22s22-10 22-22V63M84 63h54M96 92h30" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <text x="148" y="76" fill="#071F3A" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Chemical &amp; Environmental</text>
+  <text x="148" y="110" fill="#173A63" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Dyeing, washing, printing, finishing</text>
+  <rect x="60" y="148" width="520" height="72" rx="12" fill="#FFFFFF" stroke="#D8D5CE"/>
+  <text x="86" y="180" fill="#3E4C59" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">Chemical management and wastewater documentation</text>
+  <text x="86" y="207" fill="#6B7280" font-family="Arial, Helvetica, sans-serif" font-size="14">Reviewed when required by buyer production scope</text>
+  <rect x="60" y="244" width="282" height="34" rx="17" fill="#EAF1F7"/>
+  <text x="201" y="266" text-anchor="middle" fill="#173A63" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">PROCESS DOCUMENTATION REVIEW</text>
+  <text x="590" y="284" text-anchor="end" fill="#9A9288" font-family="Arial, Helvetica, sans-serif" font-size="11">Not an official logo</text>
 </svg>

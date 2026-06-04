@@ -10,42 +10,42 @@ const complianceCards = [
     title: "OEKO-TEX Standard 100",
     description:
       "For textile products tested for harmful substances. Especially relevant for apparel, underwear, babywear, socks, and close-to-skin products.",
-    placeholder: "Certification logo to be added after verification",
+    placeholder: "OEKO-TEX Standard 100 documentation support visual",
     placeholderImage: "/assets/compliance/oeko-tex-placeholder.svg"
   },
   {
     title: "Organic & Recycled Material Standards",
     description:
       "GOTS, OCS, GRS, or RCS documentation can be supported where organic cotton or recycled material claims are required.",
-    placeholder: "Verified documentation required before display",
+    placeholder: "Organic and recycled material documentation support visual",
     placeholderImage: "/assets/compliance/organic-recycled-placeholder.svg"
   },
   {
     title: "Social Compliance Audits",
     description:
       "Production can be aligned with buyer-requested social compliance frameworks such as BSCI, Sedex/SMETA, or WRAP, depending on factory availability and audit requirements.",
-    placeholder: "Logo placeholder",
+    placeholder: "Social compliance audit support visual",
     placeholderImage: "/assets/compliance/social-compliance-placeholder.svg"
   },
   {
     title: "EU & US Market Compliance",
     description:
       "Support can be provided for REACH-related chemical restrictions, textile labeling, fiber composition, country of origin marking, and product-specific requirements for European and U.S. markets.",
-    placeholder: "Verified documentation required before display",
+    placeholder: "EU and US market compliance support visual",
     placeholderImage: "/assets/compliance/market-compliance-placeholder.svg"
   },
   {
     title: "Children's Apparel Requirements",
     description:
       "For baby and children's clothing, additional requirements such as OEKO-TEX Class I, CPSIA/CPSC-related testing, flammability checks, tracking labels, and drawstring safety standards can be considered according to the destination market.",
-    placeholder: "Certification logo to be added after verification",
+    placeholder: "Children's apparel testing support visual",
     placeholderImage: "/assets/compliance/childrens-apparel-placeholder.svg"
   },
   {
     title: "Chemical & Environmental Management",
     description:
       "For dyeing, washing, printing, and finishing processes, additional documentation related to chemical management, wastewater, and environmental performance can be reviewed when required by the buyer.",
-    placeholder: "Logo placeholder",
+    placeholder: "Chemical and environmental management support visual",
     placeholderImage: "/assets/compliance/chemical-environmental-placeholder.svg"
   }
 ];
@@ -95,7 +95,7 @@ export function ComplianceCertificationSection({
                 key={card.title}
                 className="rounded-panel border border-stone-200 bg-white p-5 shadow-line"
               >
-                {/* Replace this placeholder only with verified official certification logo files. */}
+                {/* Replace this visual only with verified official certification logo files. */}
                 <div className="relative flex min-h-32 items-center justify-center overflow-hidden rounded-panel border border-dashed border-stone-300 bg-stone-50 px-4 text-center">
                   <Image
                     src={card.placeholderImage}
@@ -106,7 +106,8 @@ export function ComplianceCertificationSection({
                   />
                 </div>
                 <p className="mt-3 text-xs font-medium leading-5 text-stone-500">
-                  Reference visual only. Official logo display requires verified documentation.
+                  Documentation can be provided upon request where applicable. Official logos are
+                  displayed only after certificate verification.
                 </p>
                 <div className="mt-5 flex gap-3">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-panel bg-denim-100 text-denim-800">
