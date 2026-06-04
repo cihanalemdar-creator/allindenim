@@ -93,34 +93,36 @@ export function ComplianceCertificationSection({
             {complianceCards.map((card, index) => (
               <article
                 key={card.title}
-                className="rounded-panel border border-stone-200 bg-white p-5 shadow-line"
+                className="flex h-full flex-col overflow-hidden rounded-panel border border-stone-200 bg-white shadow-line"
               >
                 {/* Replace this visual only with verified official certification logo files. */}
-                <div className="relative flex min-h-32 items-center justify-center overflow-hidden rounded-panel border border-dashed border-stone-300 bg-stone-50 px-4 text-center">
+                <div className="relative aspect-[2/1] w-full overflow-hidden border-b border-stone-200 bg-stone-50">
                   <Image
                     src={card.placeholderImage}
                     alt={card.placeholder}
-                    width={320}
-                    height={160}
-                    className="h-full max-h-32 w-full object-contain"
+                    width={640}
+                    height={320}
+                    className="h-full w-full object-cover"
                   />
                 </div>
-                <p className="mt-3 text-xs font-medium leading-5 text-stone-500">
-                  Documentation can be provided upon request where applicable. Official logos are
-                  displayed only after certificate verification.
-                </p>
-                <div className="mt-5 flex gap-3">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-panel bg-denim-100 text-denim-800">
-                    {index % 2 === 0 ? (
-                      <FileCheck2 className="h-5 w-5" aria-hidden="true" />
-                    ) : (
-                      <ClipboardCheck className="h-5 w-5" aria-hidden="true" />
-                    )}
+                <div className="flex flex-1 flex-col p-5">
+                  <div className="flex gap-3">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-panel bg-denim-100 text-denim-800">
+                      {index % 2 === 0 ? (
+                        <FileCheck2 className="h-5 w-5" aria-hidden="true" />
+                      ) : (
+                        <ClipboardCheck className="h-5 w-5" aria-hidden="true" />
+                      )}
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-ink-900">{card.title}</h3>
+                      <p className="mt-2 text-sm leading-7 text-stone-600">{card.description}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-ink-900">{card.title}</h3>
-                    <p className="mt-2 text-sm leading-7 text-stone-600">{card.description}</p>
-                  </div>
+                  <p className="mt-auto pt-5 text-xs font-medium leading-5 text-stone-500">
+                    Documentation can be provided upon request where applicable. Official logos are
+                    displayed only after certificate verification.
+                  </p>
                 </div>
               </article>
             ))}
