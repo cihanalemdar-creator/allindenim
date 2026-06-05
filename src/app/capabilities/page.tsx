@@ -67,12 +67,15 @@ const capabilities = [
 ];
 
 const categoryCoverage = [
-  "Denim & jeans",
-  "Woven apparel",
-  "Knitwear and jersey basics",
-  "Underwear and loungewear",
-  "Babywear and children's apparel",
-  "Ready-to-wear and private label collections"
+  { label: "Denim & jeans", icon: <AssetIcon name="denim-jeans" size="sm" /> },
+  { label: "Woven apparel", icon: <AssetIcon name="woven-apparel" size="sm" /> },
+  { label: "Knitwear and jersey basics", icon: <AssetIcon name="knitwear" size="sm" /> },
+  { label: "Underwear and loungewear", icon: <AssetIcon name="underwear-loungewear" size="sm" /> },
+  { label: "Babywear and children's apparel", icon: <AssetIcon name="babywear-children" size="sm" /> },
+  {
+    label: "Ready-to-wear and private label collections",
+    icon: <AssetIcon name="ready-to-wear" size="sm" />
+  }
 ];
 
 export default function CapabilitiesPage() {
@@ -123,13 +126,11 @@ export default function CapabilitiesPage() {
             <div className="grid gap-3 sm:grid-cols-2">
               {categoryCoverage.map((item) => (
                 <div
-                  key={item}
+                  key={item.label}
                   className="flex min-h-20 items-center gap-4 rounded-panel border border-stone-200 bg-white p-5 shadow-line"
                 >
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-panel bg-denim-100 text-denim-800">
-                    <AssetIcon name="private-label" />
-                  </span>
-                  <p className="text-sm font-semibold leading-6 text-ink-900">{item}</p>
+                  {item.icon}
+                  <p className="text-sm font-semibold leading-6 text-ink-900">{item.label}</p>
                 </div>
               ))}
             </div>

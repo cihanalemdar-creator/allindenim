@@ -138,7 +138,7 @@ export default function ProductionProcessPage() {
               title="Category Pages"
               description="Review denim, woven, knitwear, underwear, loungewear, and private label production categories."
               href="/product-categories"
-              icon={<AssetIcon name="private-label" />}
+              icon={<AssetIcon name="ready-to-wear" />}
             />
             <CapabilityCard
               title="Quality Control"

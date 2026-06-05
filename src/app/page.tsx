@@ -61,7 +61,7 @@ const capabilities = [
     description:
       "Multi-category apparel collections including adult, baby, and kids' styles coordinated through sourcing, sampling, production, QC, and export steps.",
     href: "/ready-to-wear-private-label",
-    icon: <AssetIcon name="manufacturing" />,
+    icon: <AssetIcon name="ready-to-wear" />,
     tags: ["Collections", "Baby & kids", "Export"]
   },
   {
@@ -130,7 +130,7 @@ const turkeyAdvantages = [
     title: "Textile Ecosystem",
     description:
       "The market offers access to fabrics, trims, washing, embroidery, printing, packaging, and specialist suppliers.",
-    icon: <AssetIcon name="manufacturing" />
+    icon: <AssetIcon name="factory-network" />
   },
   {
     title: "Flexible Possibilities",
@@ -174,7 +174,7 @@ const buyerExpectations = [
     title: "Supplier Fit Before Production",
     description:
       "Projects are matched with suitable production options based on category, material needs, quantity expectations, and operational fit.",
-    icon: <AssetIcon name="manufacturing" />
+    icon: <AssetIcon name="factory-network" />
   },
   {
     title: "Visible Sampling Follow-Up",

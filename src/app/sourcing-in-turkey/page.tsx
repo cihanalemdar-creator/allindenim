@@ -35,13 +35,13 @@ const sourcingSections = [
     title: "Textile Ecosystem",
     description:
       "The ecosystem includes apparel production, fabric suppliers, trims, washing, printing, embroidery, packaging, logistics, and export-related services.",
-    icon: <AssetIcon name="manufacturing" />
+    icon: <AssetIcon name="factory-network" />
   },
   {
     title: "Flexible Production Possibilities",
     description:
       "MOQ and production flexibility depend on category, fabric, supplier, season, and finishing needs, but Turkey can offer practical options for many B2B projects.",
-    icon: <AssetIcon name="fast-turnaround" />
+    icon: <AssetIcon name="timeline-planning" />
   },
   {
     title: "Fabric and Trim Access",

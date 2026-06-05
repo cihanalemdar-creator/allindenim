@@ -2,21 +2,33 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 export type AssetIconName =
+  | "activewear-sportswear"
+  | "babywear-children"
+  | "compliance-certification"
   | "contact-inquiry"
   | "denim-jeans"
+  | "embroidery-printing"
+  | "eu-us-market"
   | "export-logistics"
   | "fabric-sourcing"
   | "fast-turnaround"
+  | "factory-network"
   | "global-partner"
   | "knitwear"
   | "manufacturing"
+  | "organic-recycled"
   | "packaging"
   | "pattern-development"
   | "private-label"
   | "quality-control"
+  | "ready-to-wear"
   | "sampling"
+  | "social-audit"
+  | "testing-lab"
+  | "timeline-planning"
   | "trims-accessories"
   | "underwear-loungewear"
+  | "washing-finishing"
   | "woven-apparel";
 
 type AssetIconProps = {

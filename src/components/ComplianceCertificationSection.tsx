@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { ClipboardCheck, FileCheck2, ShieldCheck } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
+import { AssetIcon, type AssetIconName } from "@/components/AssetIcon";
 import { Button } from "@/components/Button";
 import { Container } from "@/components/Container";
 import { SectionHeader } from "@/components/SectionHeader";
@@ -11,44 +12,56 @@ const complianceCards = [
     description:
       "For textile products tested for harmful substances. Especially relevant for apparel, underwear, babywear, socks, and close-to-skin products.",
     placeholder: "OEKO-TEX Standard 100 documentation support visual",
-    placeholderImage: "/assets/compliance/oeko-tex-placeholder.svg"
+    placeholderImage: "/assets/compliance/oeko-tex-placeholder.svg",
+    icon: "compliance-certification"
   },
   {
     title: "Organic & Recycled Material Standards",
     description:
       "GOTS, OCS, GRS, or RCS documentation can be supported where organic cotton or recycled material claims are required.",
     placeholder: "Organic and recycled material documentation support visual",
-    placeholderImage: "/assets/compliance/organic-recycled-placeholder.svg"
+    placeholderImage: "/assets/compliance/organic-recycled-placeholder.svg",
+    icon: "organic-recycled"
   },
   {
     title: "Social Compliance Audits",
     description:
       "Production can be aligned with buyer-requested social compliance frameworks such as BSCI, Sedex/SMETA, or WRAP, depending on factory availability and audit requirements.",
     placeholder: "Social compliance audit support visual",
-    placeholderImage: "/assets/compliance/social-compliance-placeholder.svg"
+    placeholderImage: "/assets/compliance/social-compliance-placeholder.svg",
+    icon: "social-audit"
   },
   {
     title: "EU & US Market Compliance",
     description:
       "Support can be provided for REACH-related chemical restrictions, textile labeling, fiber composition, country of origin marking, and product-specific requirements for European and U.S. markets.",
     placeholder: "EU and US market compliance support visual",
-    placeholderImage: "/assets/compliance/market-compliance-placeholder.svg"
+    placeholderImage: "/assets/compliance/market-compliance-placeholder.svg",
+    icon: "eu-us-market"
   },
   {
     title: "Children's Apparel Requirements",
     description:
       "For baby and children's clothing, additional requirements such as OEKO-TEX Class I, CPSIA/CPSC-related testing, flammability checks, tracking labels, and drawstring safety standards can be considered according to the destination market.",
     placeholder: "Children's apparel testing support visual",
-    placeholderImage: "/assets/compliance/childrens-apparel-placeholder.svg"
+    placeholderImage: "/assets/compliance/childrens-apparel-placeholder.svg",
+    icon: "babywear-children"
   },
   {
     title: "Chemical & Environmental Management",
     description:
       "For dyeing, washing, printing, and finishing processes, additional documentation related to chemical management, wastewater, and environmental performance can be reviewed when required by the buyer.",
     placeholder: "Chemical and environmental management support visual",
-    placeholderImage: "/assets/compliance/chemical-environmental-placeholder.svg"
+    placeholderImage: "/assets/compliance/chemical-environmental-placeholder.svg",
+    icon: "washing-finishing"
   }
-];
+] satisfies Array<{
+  title: string;
+  description: string;
+  placeholder: string;
+  placeholderImage: string;
+  icon: AssetIconName;
+}>;
 
 const supportNotes = [
   "Available upon request",
@@ -90,7 +103,7 @@ export function ComplianceCertificationSection({
           </div>
 
           <div className="grid gap-5 md:grid-cols-2">
-            {complianceCards.map((card, index) => (
+            {complianceCards.map((card) => (
               <article
                 key={card.title}
                 className="flex h-full flex-col overflow-hidden rounded-panel border border-stone-200 bg-white shadow-line"
@@ -107,13 +120,7 @@ export function ComplianceCertificationSection({
                 </div>
                 <div className="flex flex-1 flex-col p-5">
                   <div className="flex gap-3">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-panel bg-denim-100 text-denim-800">
-                      {index % 2 === 0 ? (
-                        <FileCheck2 className="h-5 w-5" aria-hidden="true" />
-                      ) : (
-                        <ClipboardCheck className="h-5 w-5" aria-hidden="true" />
-                      )}
-                    </div>
+                    <AssetIcon name={card.icon} size="sm" />
                     <div>
                       <h3 className="text-lg font-semibold text-ink-900">{card.title}</h3>
                       <p className="mt-2 text-sm leading-7 text-stone-600">{card.description}</p>

@@ -35,7 +35,7 @@ const whatWeDo = [
     title: "Sampling & Production Management",
     description:
       "From first samples to production follow-up, we support communication, approvals, timing, and practical execution.",
-    icon: <AssetIcon name="manufacturing" />
+    icon: <AssetIcon name="timeline-planning" />
   },
   {
     title: "Quality & Export Support",
@@ -46,11 +46,19 @@ const whatWeDo = [
 ];
 
 const focusAreas = [
-  { title: "Denim & Jeans", href: "/denim-jeans-manufacturing" },
-  { title: "Woven Apparel", href: "/woven-apparel-manufacturing" },
-  { title: "Knitwear", href: "/knitwear-manufacturing" },
-  { title: "Underwear & Loungewear", href: "/underwear-loungewear-manufacturing" },
-  { title: "Ready-to-Wear / Private Label", href: "/ready-to-wear-private-label" }
+  { title: "Denim & Jeans", href: "/denim-jeans-manufacturing", icon: <AssetIcon name="denim-jeans" /> },
+  { title: "Woven Apparel", href: "/woven-apparel-manufacturing", icon: <AssetIcon name="woven-apparel" /> },
+  { title: "Knitwear", href: "/knitwear-manufacturing", icon: <AssetIcon name="knitwear" /> },
+  {
+    title: "Underwear & Loungewear",
+    href: "/underwear-loungewear-manufacturing",
+    icon: <AssetIcon name="underwear-loungewear" />
+  },
+  {
+    title: "Ready-to-Wear / Private Label",
+    href: "/ready-to-wear-private-label",
+    icon: <AssetIcon name="ready-to-wear" />
+  }
 ];
 
 const supportItems = [
@@ -138,7 +146,7 @@ export default function AboutPage() {
                 title={area.title}
                 description="Category-specific sourcing and production coordination support in Turkey."
                 href={area.href}
-                icon={<AssetIcon name="private-label" />}
+                icon={area.icon}
               />
             ))}
           </div>

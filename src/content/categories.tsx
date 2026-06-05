@@ -300,7 +300,7 @@ export const categoryPages: CategoryPageData[] = [
     description:
       "Allin Denim helps brands build and manage private label apparel programs in Turkey, including adult, baby, and kids' ranges, from collection planning and sourcing to sampling, production coordination, packaging, quality control, and export support.",
     imageLabel: "Future private label collection or packaging image",
-    icon: <AssetIcon name="private-label" />,
+    icon: <AssetIcon name="ready-to-wear" />,
     capabilities: [
       "End-to-end private label apparel development",
       "Collection planning and category coordination",

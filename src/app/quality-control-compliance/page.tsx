@@ -32,13 +32,13 @@ const qualityBlocks = [
     title: "Supplier Evaluation",
     description:
       "Supplier suitability is reviewed according to product category, production scope, timing, communication, and buyer requirements.",
-    icon: <AssetIcon name="manufacturing" />
+    icon: <AssetIcon name="factory-network" />
   },
   {
     title: "Material Checks",
     description:
       "Fabric, trim, label, packaging, and finishing details are checked against the approved direction before and during production.",
-    icon: <AssetIcon name="fabric-sourcing" />
+    icon: <AssetIcon name="testing-lab" />
   },
   {
     title: "Sample Approval",
