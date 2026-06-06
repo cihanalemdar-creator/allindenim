@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { BrandLogo } from "@/components/BrandLogo";
 import { Container } from "@/components/Container";
-import { contactEmail, phoneNumbers } from "@/content/contact";
+import { contactEmail, legalCompanyName, phoneNumbers } from "@/content/contact";
 
 const footerGroups = [
   {
@@ -106,7 +106,7 @@ export function Footer() {
           </div>
         </div>
         <div className="flex flex-col gap-3 border-t border-white/10 py-6 text-sm text-stone-300 sm:flex-row sm:items-center sm:justify-between">
-          <p>Copyright {new Date().getFullYear()} Allin Denim. All rights reserved.</p>
+          <p>Copyright {new Date().getFullYear()} {legalCompanyName}. All rights reserved.</p>
           <p>Apparel sourcing and production coordination in Turkey.</p>
         </div>
       </Container>
