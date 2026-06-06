@@ -12,6 +12,8 @@ export type OfficeLocation = {
   };
 };
 
+export const legalCompanyName = "ALL IN DENIM, INC";
+
 export const contactEmail = "usa@allindenim.com";
 
 export const phoneNumbers = [
@@ -66,15 +68,15 @@ export const officeLocations: OfficeLocation[] = [
     }
   },
   {
-    name: "USA Office",
+    name: "USA Office / Registered Company",
     country: "United States",
-    addressLines: ["336 W, 37th Street #310", "New York, NY 10018"],
+    addressLines: [legalCompanyName, "1402 Ave K, 3G", "Brooklyn, NY 11230"],
     phone: "+1 (315) 602 31 61",
     schema: {
-      streetAddress: "336 W, 37th Street #310",
-      addressLocality: "New York",
+      streetAddress: "1402 Ave K, 3G",
+      addressLocality: "Brooklyn",
       addressRegion: "NY",
-      postalCode: "10018",
+      postalCode: "11230",
       addressCountry: "US"
     }
   },

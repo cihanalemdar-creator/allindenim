@@ -1,5 +1,5 @@
 import { siteConfig } from "@/lib/site";
-import { contactEmail, officeLocations, phoneNumbers } from "@/content/contact";
+import { contactEmail, legalCompanyName, officeLocations, phoneNumbers } from "@/content/contact";
 
 type JsonLdProps = {
   data: Record<string, unknown>;
@@ -22,6 +22,7 @@ export function SiteJsonLd() {
     "@type": "Organization",
     "@id": `${siteConfig.url}/#organization`,
     name: siteConfig.name,
+    legalName: legalCompanyName,
     url: siteConfig.url,
     logo: `${siteConfig.url}/assets/logo/png/allindenim-primary-960.png`,
     email: contactEmail,
