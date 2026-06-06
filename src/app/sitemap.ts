@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { categoryPages } from "@/content/categories";
 import { siteConfig } from "@/lib/site";
 
+export const dynamic = "force-static";
+
 const staticRoutes = [
   "",
   "/about",

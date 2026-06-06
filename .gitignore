@@ -4,6 +4,9 @@ node_modules
 .tmp
 .backups
 certification-logo-sources
+allindenim-cpanel-upload.zip
+public/icons/allin-denim-backup-*/
+public/icons/allin-denim/_preview-new-icons.jpg
 
 # Next.js
 .next
