@@ -34,7 +34,7 @@ export function PageHero({
   return (
     <section className="border-b border-stone-200 bg-cotton py-12 sm:py-16 lg:py-20">
       <Container>
-        <div className="grid items-center gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:gap-14">
+        <div className="grid items-start gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:gap-14">
           <div>
             {eyebrow ? (
               <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-denim-700">
