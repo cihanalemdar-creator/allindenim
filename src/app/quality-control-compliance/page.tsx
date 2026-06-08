@@ -92,7 +92,7 @@ export default function QualityControlCompliancePage() {
         description="Allin Denim supports international buyers with supplier evaluation, material checks, sample approval, measurement control, inline inspection, final inspection, packaging review, and documentation coordination."
         primaryCta={{ label: "Discuss Quality Requirements", href: "/contact" }}
         secondaryCta={{ label: "View Production Process", href: "/production-process" }}
-        imageLabel="Future inspection, measurement, or packaging review image"
+        imageLabel="Inspection and measurement review"
         imageSrc={qualityHeroImage?.path}
         imageAlt={qualityHeroImage?.alt}
       />

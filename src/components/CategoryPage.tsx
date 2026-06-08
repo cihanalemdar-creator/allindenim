@@ -175,6 +175,8 @@ export function CategoryPage({ category }: CategoryPageProps) {
 }
 
 export function CategoryOverviewPage() {
+  const overviewImage = getVisualAsset("product-categories-overview");
+
   return (
     <>
       <BreadcrumbJsonLd
@@ -189,7 +191,9 @@ export function CategoryOverviewPage() {
         description="Allin Denim supports international brands across denim, woven apparel, knitwear, underwear, loungewear, baby and children's apparel, ready-to-wear, and private label apparel through sourcing, sampling, production management, QC, and export coordination."
         primaryCta={{ label: "Start a Production Inquiry", href: "/contact" }}
         secondaryCta={{ label: "Explore Capabilities", href: "/capabilities" }}
-        imageLabel="Future multi-category apparel visual"
+        imageLabel={overviewImage?.label ?? "Apparel category overview"}
+        imageSrc={overviewImage?.path}
+        imageAlt={overviewImage?.alt}
       />
 
       <section className="bg-white py-20 sm:py-24">

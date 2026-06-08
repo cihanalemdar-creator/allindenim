@@ -95,7 +95,7 @@ export default function CapabilitiesPage() {
         description="Allin Denim supports international buyers with a structured capability set across product development, sourcing, sampling, production follow-up, quality control, packaging, and export coordination."
         primaryCta={{ label: "Start a Production Inquiry", href: "/contact" }}
         secondaryCta={{ label: "View Product Categories", href: "/product-categories" }}
-        imageLabel="Future capabilities or production coordination image"
+        imageLabel="Fabric and trim sourcing"
         imageSrc={sourcingImage?.path}
         imageAlt={sourcingImage?.alt}
       />
@@ -149,7 +149,7 @@ export default function CapabilitiesPage() {
               description="The goal is not to overpromise. It is to give buyers a reliable Turkey-based coordination layer for apparel projects that need serious production follow-up."
             />
             <PlaceholderImage
-              label="Future sourcing, sampling, or production management visual"
+              label="Sourcing and production management"
               altText="Placeholder for future apparel sourcing and production management photography"
               src={sourcingImage?.path}
             />

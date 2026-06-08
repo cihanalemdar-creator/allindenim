@@ -87,7 +87,7 @@ export default function AboutPage() {
         description="Allin Denim supports global brands, wholesalers, e-commerce companies, and sourcing teams that want structured apparel production management in Turkey without unnecessary claims or confusion."
         primaryCta={{ label: "Start a Production Inquiry", href: "/contact" }}
         secondaryCta={{ label: "View Capabilities", href: "/capabilities" }}
-        imageLabel="Future company, showroom, or production network visual"
+        imageLabel="Apparel sourcing workspace"
         imageSrc={aboutImage?.path}
         imageAlt={aboutImage?.alt}
       />

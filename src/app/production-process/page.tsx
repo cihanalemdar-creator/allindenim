@@ -79,7 +79,7 @@ export default function ProductionProcessPage() {
         description="Allin Denim helps international buyers manage apparel production in Turkey through clear review stages, sourcing coordination, sampling, costing, production planning, quality control, packing, and export support."
         primaryCta={{ label: "Send Your Product Brief", href: "/contact" }}
         secondaryCta={{ label: "View Capabilities", href: "/capabilities" }}
-        imageLabel="Future production process or sampling visual"
+        imageLabel="Sampling and production planning"
         imageSrc={samplingImage?.path}
         imageAlt={samplingImage?.alt}
       />

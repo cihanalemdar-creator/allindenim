@@ -237,7 +237,7 @@ export default function Home() {
         description="From denim and woven garments to knitwear, underwear, and private label collections, Allin Denim helps international buyers coordinate dependable apparel production through Turkey-based sourcing, sampling, quality control, and export support."
         primaryCta={{ label: "Start a Production Inquiry", href: "/contact" }}
         secondaryCta={{ label: "Explore Capabilities", href: "/capabilities" }}
-        imageLabel="Future apparel production visual"
+        imageLabel="Apparel production planning"
         imageSrc={homeHero?.path}
         imageAlt={homeHero?.alt}
         imageRatio="wide"

@@ -4,6 +4,7 @@ import { CTASection } from "@/components/CTASection";
 import { BreadcrumbJsonLd, FAQJsonLd } from "@/components/JsonLd";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeader } from "@/components/SectionHeader";
+import { getVisualAsset } from "@/content/visual-assets";
 import { createMetadata } from "@/lib/site";
 
 export const metadata = createMetadata({
@@ -53,6 +54,8 @@ const faqs = [
 ];
 
 export default function FAQPage() {
+  const faqImage = getVisualAsset("faq-production-brief");
+
   return (
     <>
       <BreadcrumbJsonLd
@@ -68,7 +71,9 @@ export default function FAQPage() {
         description="Find answers about private label production, product categories, sourcing, quality control, supplier coordination, and export support with Allin Denim."
         primaryCta={{ label: "Start a Production Inquiry", href: "/contact" }}
         secondaryCta={{ label: "View Production Process", href: "/production-process" }}
-        imageLabel="Future FAQ or product brief visual"
+        imageLabel={faqImage?.label ?? "Production brief questions"}
+        imageSrc={faqImage?.path}
+        imageAlt={faqImage?.alt}
       />
 
       <section className="bg-white py-20 sm:py-24">

@@ -85,7 +85,7 @@ export default function ContactPage() {
         description="The more technical details you share, the faster we can evaluate feasibility, pricing, sampling, and production options."
         primaryCta={{ label: "Complete the Inquiry Form", href: "#inquiry-form" }}
         secondaryCta={{ label: "View Production Process", href: "/production-process" }}
-        imageLabel="Future contact, product brief, or sampling visual"
+        imageLabel="Production inquiry desk"
         imageSrc={contactImage?.path}
         imageAlt={contactImage?.alt}
       />

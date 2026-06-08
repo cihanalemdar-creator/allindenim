@@ -39,7 +39,7 @@ export const categoryPages: CategoryPageData[] = [
     eyebrow: "Core category",
     description:
       "Allin Denim helps international brands manage denim production in Turkey, from sampling and fit development to wash direction, trims, labels, packaging, quality control, and export coordination.",
-    imageLabel: "Future denim, wash, or jeans production image",
+    imageLabel: "Denim and jeans development",
     icon: <AssetIcon name="denim-jeans" />,
     capabilities: [
       "Sampling and fit development for denim styles",
@@ -105,7 +105,7 @@ export const categoryPages: CategoryPageData[] = [
     eyebrow: "Woven category",
     description:
       "Allin Denim coordinates woven garment production for brands that need fabric sourcing, pattern and sampling support, supplier matching, production follow-up, and export-ready delivery.",
-    imageLabel: "Future woven apparel or cutting table image",
+    imageLabel: "Woven apparel development",
     icon: <AssetIcon name="woven-apparel" />,
     capabilities: [
       "Fabric sourcing for woven apparel programs",
@@ -168,7 +168,7 @@ export const categoryPages: CategoryPageData[] = [
     eyebrow: "Knit category",
     description:
       "Allin Denim supports knit apparel programs for brands seeking comfortable casualwear, jersey basics, babywear basics, sweatshirts, hoodies, and private label knit collections made through Turkish suppliers.",
-    imageLabel: "Future knitwear, jersey, or casualwear image",
+    imageLabel: "Knitwear and casualwear development",
     icon: <AssetIcon name="knitwear" />,
     capabilities: [
       "Knit fabric sourcing and supplier coordination",
@@ -236,7 +236,7 @@ export const categoryPages: CategoryPageData[] = [
     eyebrow: "Comfort category",
     description:
       "Allin Denim helps brands coordinate comfort-focused underwear, loungewear, pajamas, baby bodywear, and basic bodywear production with attention to soft fabrics, elastic trims, fit, packaging, and quality control.",
-    imageLabel: "Future underwear, loungewear, or soft fabric image",
+    imageLabel: "Underwear and loungewear development",
     icon: <AssetIcon name="underwear-loungewear" />,
     capabilities: [
       "Supplier coordination for comfort-focused apparel",
@@ -299,7 +299,7 @@ export const categoryPages: CategoryPageData[] = [
     eyebrow: "Private label production",
     description:
       "Allin Denim helps brands build and manage private label apparel programs in Turkey, including adult, baby, and kids' ranges, from collection planning and sourcing to sampling, production coordination, packaging, quality control, and export support.",
-    imageLabel: "Future private label collection or packaging image",
+    imageLabel: "Private label collection planning",
     icon: <AssetIcon name="ready-to-wear" />,
     capabilities: [
       "End-to-end private label apparel development",

@@ -89,7 +89,7 @@ export default function SourcingInTurkeyPage() {
         description="Allin Denim helps foreign companies source and manage apparel production in Turkey through supplier coordination, fabric and trim sourcing, sampling, production management, quality control, and export support."
         primaryCta={{ label: "Start a Sourcing Inquiry", href: "/contact" }}
         secondaryCta={{ label: "View Product Categories", href: "/product-categories" }}
-        imageLabel="Future Turkey sourcing or textile ecosystem visual"
+        imageLabel="Turkey textile sourcing"
         imageSrc={sourcingImage?.path}
         imageAlt={sourcingImage?.alt}
       />

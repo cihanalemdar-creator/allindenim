@@ -57,6 +57,14 @@ export const visualAssets: VisualAsset[] = [
     alt: "Private label apparel collection samples, fabric swatches, hangtags, packaging, and production notes"
   },
   {
+    id: "product-categories-overview",
+    label: "Apparel Category Overview",
+    path: "/assets/images/preview/product-categories-overview.webp",
+    ratio: "wide",
+    usedFor: ["Product Categories overview page"],
+    alt: "Apparel category planning table with denim, woven, knitwear, underwear, babywear fabrics, trims, and technical sketches"
+  },
+  {
     id: "fabric-trim-sourcing",
     label: "Fabric & Trim Sourcing",
     path: "/assets/images/preview/section-fabric-trim-sourcing.webp",
@@ -127,6 +135,14 @@ export const visualAssets: VisualAsset[] = [
     ratio: "wide",
     usedFor: ["Contact page"],
     alt: "Production inquiry desk with garment samples, fabric swatches, trims, measuring tape, and sourcing documents"
+  },
+  {
+    id: "faq-production-brief",
+    label: "Production Brief Questions",
+    path: "/assets/images/preview/faq-production-brief.webp",
+    ratio: "wide",
+    usedFor: ["FAQ page"],
+    alt: "Production brief folder with garment sketches, fabric swatches, trims, measuring tape, and apparel inquiry notes"
   }
 ];
 
